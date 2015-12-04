@@ -1,0 +1,7 @@
+{
+    "version": "1.0.0",
+    "repos": "https://github.com/huixisheng/fis3-components.git",
+    "description": "定义项目常用的代码片段，接近组件",
+    "name": "cosmeapp",
+    "main": "index.js"
+}
