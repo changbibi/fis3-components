@@ -12,3 +12,7 @@
 
 添加4444
 
+
+git subtree push --prefix=lib remote-hexo master
+git subtree pull --prefix=lib remote-hexo master
+
