@@ -1,0 +1,18 @@
+{
+  "name": "mobileApp",
+  "version": "0.0.0",
+  "authors": [
+    "huixisheng <469184346@qq.com>"
+  ],
+  "keywords": [
+    "mobile"
+  ],
+  "dependencies": {
+    "lib-flexible": "git@github.com:amfe/lib-flexible.git",
+    "dropload": "0.3.0"
+  },
+  "devDependencies": {
+
+  },
+  "license": "MIT"
+}
