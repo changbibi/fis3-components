@@ -228,12 +228,16 @@
             loadingInstance.show();
         }
         var defaults = {
-            type: 'POST',
+            type: 'GET',
             dataType: 'json',
             data: {},
             // url: F.getAjaxUri('/api/order/shopping-cart-list?#',
             url: '',
             beforeSend: function(xhr, settings){
+                if( CONFIG && F.isEmptyObject(CONFIG['loginuser']) && cfg['type'] == 'POST' ){
+                    F.showLogin();
+                    return false
+                }
             },
             success: function(data, status, xhr){
             },

@@ -9,7 +9,8 @@
   ],
   "dependencies": {
     "lib-flexible": "git@github.com:amfe/lib-flexible.git",
-    "dropload": "0.3.0"
+    "dropload": "0.3.0",
+    "iswiper": "1.4.0"
   },
   "devDependencies": {
 

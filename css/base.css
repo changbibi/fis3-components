@@ -491,8 +491,8 @@ body {
 }
 
 img[data-lazyload]{ background: url(http://static.cosmeapp.com/FvcMWnL0HDVDpD5_0_nb-gL4aQSQ?imageView2/2/w/750/h/750) center center repeat-y #e6e6e6; background-size: 100% auto; }
-/* mobile wap app */
-.mw-weixin-mask{ position: fixed; top: 0; bottom: 0; width: 10rem; height: 100%; background: url(//static.cosmeapp.com/Fqysa1uAjXjHemwkDA-DmWf7mI0v?imageView2/2/w/750/h/500) no-repeat 0 0 rgba(0, 0, 0, 0.6); background-size: 100% auto;  z-index: 100;  }
+/* Mobile Application */
+.ma-weixin-mask{ position: fixed; top: 0; bottom: 0; width: 10rem; height: 100%; background: url(//static.cosmeapp.com/Fqysa1uAjXjHemwkDA-DmWf7mI0v?imageView2/2/w/750/h/500) no-repeat 0 0 rgba(0, 0, 0, 0.6); background-size: 100% auto;  z-index: 100;  }
 
 /**
  * placeholder
@@ -506,12 +506,12 @@ input:-moz-placeholder, textarea:-moz-placeholder{ font-size: 11px; color: #bfbf
 input:-moz-placeholder, textarea:-moz-placeholder{ font-size: 11px; color:#bfbfbf; line-height: 18px; } /*ff 19+*/
 ::-webkit-input-placeholder, ::-webkit-textarea-placeholder{ font-size: 11px; line-height: 18px; color: #bfbfbf ; }
 ::-ms-input-placeholder, ::-ms-textarea-placeholder{line-height: 18px; font-size: 11px; color: #bfbfbf ; }
-.mw-placeholder{ color: #bfbfbf ; }
+.ma-placeholder{ color: #bfbfbf ; }
 
 
 
 /* 垂直居中 */
-.mw-abs-vc{
+.ma-abs-vc{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -522,7 +522,7 @@ input:-moz-placeholder, textarea:-moz-placeholder{ font-size: 11px; color:#bfbfb
             transform: translate(-50%,-50%);
 }
 
-.mw-abs-center{
+.ma-abs-center{
     position: absolute;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
@@ -532,7 +532,7 @@ input:-moz-placeholder, textarea:-moz-placeholder{ font-size: 11px; color:#bfbfb
             transform: translate(-50%, 0);
 }
 
-.mw-center{ display: block; margin-left: auto; margin-right: auto; }
+.ma-center{ display: block; margin-left: auto; margin-right: auto; }
 
 
 /**
