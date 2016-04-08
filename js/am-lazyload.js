@@ -635,6 +635,9 @@
  * @todo
  *
  * 1. 添加textarea支持
+ * 2. http://static.cosmeapp.com/activity/201505/29/17/43/556834c069a90818.jpg webp支持
+ * 3. http://static.cosmeapp.com/activity/201505/29/17/43/556834c069a90818.jpg?imageView2/2/format/WEBP
+ * 4. http://developer.qiniu.com/code/v6/api/kodo-api/image/imageview2.html
  *
  * 2016-03-31 huixisheng
  * 1. 修改不能访问的头像为默认头像
