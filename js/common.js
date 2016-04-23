@@ -116,9 +116,20 @@
             },
             complete: function(xhr, status){
                 hasLoading && loadingInstance.hide();
+                var $target = $(options['target']);
+                if( $target.length ){
+                    $target.attr('ajax-posting', '');
+                }
             }
         }
         var options = $.extend(defaults, cfg);
+        var $target = $(options['target']);
+        if( $target.length ){
+            if( $target.attr('ajax-posting') == '1') {
+                return false;
+            }
+            $target.attr('ajax-posting', '1');
+        }
         $.ajax(options);
     }
     F.fetch = fetch;
