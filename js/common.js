@@ -154,5 +154,80 @@
       }
     });
 
+    function slider(){
+
+        var sliders = document.querySelectorAll('.mslider');
+        var indicatorsTplDefault = '<span class="cur"></span>';
+        var sliderInstance = [];
+        for(var i = 0, len = sliders.length; i < len; i++){
+            var slider = sliders[i]
+            var items = slider.querySelectorAll('.mslider-item');
+            var itemLen = items.length;
+            var indicatorsTpl = indicatorsTplDefault;
+            if( itemLen <= 1 ){
+                continue;
+            }
+            for(var j = 0; j < itemLen - 1; j++){
+                indicatorsTpl += '<span></span>';
+            }
+            var $container = $(slider);
+            var $indicators = $container.find('.mslider-indicators');
+            $indicators.show().find('div').empty().append(indicatorsTpl);
+            var $spans = $indicators.find('span');
+            ;(function(i){
+                sliderInstance[i] = QSlider.define(slider,{
+                    mode: 'horizontal', //horizontal vertical
+                    // animation: 'cover',
+                    // slideActiveClass: 'cur',
+                    isOverspread: false,
+                    loop: true,
+                    // speed: 500,
+                    onSlideChanged:function(){
+                        var index = this.currentIndex;
+                        var action = index - 1;
+                        var len = this.slides.length;
+                        action = action % itemLen;
+                        $spans.removeClass('cur');
+                        $spans.eq(action).addClass('cur');
+                    }
+                });
+                function nextSlider(){
+                    setTimeout(function(){
+                        sliderInstance[i].next();
+                        nextSlider();
+                    }, 5000);
+                }
+                nextSlider();
+            })(i);
+        }
+    }
+    function initScroll(){
+        // 后台处理前端样式逻辑总是忘记处理
+        var $scroll = $('.flindex-brand-scroll');
+        $scroll.each(function(){
+            var $this = $(this);
+            var len = $this.find('.flindex-brand-slider-item').length;
+            var width = 2.86667 * len + 'rem';
+            $this.css({
+                'width': width
+            })
+        });
+
+        var $cmscroll = $('.cm-scroll');
+        $cmscroll.each(function(){
+            var $this = $(this);
+            var len = $this.find('.cm-scroll-item').length;
+            var width = 3.6 * len + 'rem';
+            $this.css({
+                'width': width
+            });
+        });
+    }
+
+    $(document).ready(function(){
+        slider();
+        initScroll();
+    });
+
 
 })(window, F);

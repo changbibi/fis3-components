@@ -1,0 +1,27 @@
+.mwicon-hg1{ color: #d7b441; }
+.mwicon-hg2{ color: #a0a0a0; }
+.mwicon-hg3{ color: #a07328; }
+.mwicon-hg4{ color: #84ccc9; }
+.mwicon-hg5{ color: #84ccc9; }
+
+
+/**
+ * 排行版
+ */
+.rankdetail-list{    }
+.rankdetail-group{ padding: 0 10px; margin-bottom: 10px; background-color: #fff; }
+.rankdetail-group > h2{ color: #2d2d34; font-size: 14px; text-align: center; line-height: 50px; position: relative; }
+.rankdetail-group > h2::after{ position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); content: ''; width: 16px; height: 0; line-height: 0; border-top: 1px solid #d7d7d7;  }
+
+.mw-card-rank{ background-color: #fff; padding: 15px 0; margin: 0; }
+.mw-card-rank::after{ border-width: 0 0 1px 0; }
+.mw-card-rank:last-child:after{ border-width: 0 0 0 0; }
+.mw-card-side{ width: 20px; text-align: center; }
+.mw-card-side > [class^="mwicon-hg"]{ font-size: 0; line-height: 0; }
+.mw-card-side > [class^="mwicon-hg"]:before{ font-size: 26px; }
+.mw-card-rank .mw-card-img{ margin-right: 15px; width: 90px; height: 90px; }
+.mw-card-rank .mw-card-name{ font-size: 14px; }
+.mw-card-rank .mw-card-star-wrap{ margin: 10px 0; color: #2d2d34; }
+.mw-card-rank .mw-card-comment, .mw-card-rank .mw-card-price{ color: #7b7a87;  }
+/* .mw-card-rank:nth-child(n+6){ background: #ff0; } */
+.mw-card-rank:nth-child(n+6) .mw-card-side > [class^="mwicon-hg"] { font-size: 20px; color: #84ccc9; }

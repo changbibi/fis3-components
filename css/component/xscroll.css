@@ -1,0 +1,8 @@
+.cm-scroll-wrap{ overflow-x: scroll;/* winphone8和android4+ */
+-webkit-overflow-scrolling: touch; } /* 定义宽度 */
+.cm-scroll-wrap::-webkit-scrollbar{ display: none; }
+.cm-scroll{ overflow: hidden; } /* 定义高度 */
+.cm-scroll-item{ float: left;  -webkit-box-sizing: border-box; box-sizing:border-box; }
+.cm-scroll-img img{ width: 100%; height: 100%; }
+
+
