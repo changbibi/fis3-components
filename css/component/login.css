@@ -1,0 +1,30 @@
+/**
+ * 弹框登录
+ */
+.cm-boxlogin-modal { display: none; position: fixed; height: 100%; width: 10rem; top: 0; left: 0; bottom: 0; right: 0; z-index: 200; }
+.cm-boxlogin { position: relative; height: auto; width: 290px; background-color: #f0f0f0; border-radius: 2px; margin: 70px auto; z-index: 2147483646; }
+.cm-boxlogin fieldset{ display: block; text-align: center;  }
+.cm-boxlogin fieldset legend{ line-height: 40px; display: block; color: #333; }
+.cm-boxlogin-mask{ position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); }
+.cm-boxlogin .ui-form-login{ margin: 0; }
+.cm-boxlogin .ui-btn-login button{ margin: 0; }
+.cm-boxlogin .ui-btn-wrap{ padding: 10px; }
+
+.ui-form-item input, .ui-form-item textarea{ height: 100%; }
+.ui-form-item-verify{ padding-right: 200px; display: none; }
+.ui-form-item-verify .ui-form-item-side{ position: absolute; right: 10px; top: 6px;  }
+.ui-form-item-verify .ui-form-item-side img{ height: 30px; width: 112.5px; display: inline-block; vertical-align: top; }
+.ui-form-item-code{ padding-right: 110px; }
+.ui-form-item-code .ui-btn{ position: absolute; right: 10px; top: 6px; border-radius: 18px; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+    .ui-form-item-code .ui-btn:before {
+        border: none;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2)
+.ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .disabled.ui-btn-primary-simple, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled, .ui-btn-primary-simple:disabled, .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .disabled.ui-btn-s:before, .disabled.ui-btn-primary-simple:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before, .ui-btn-s:disabled:before, .ui-btn-primary-simple:disabled:before, .ui-btn-primary-simple.disabled:before, .ui-btn-primary-simple:disabled:before {
+    border: none;
+  /* border: 1px solid #e9ebec; */
+}

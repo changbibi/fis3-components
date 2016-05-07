@@ -25,7 +25,7 @@
 .mw-card-price{ font-size: 10px; height: 15px; line-height: 18px; font-family: arial; }
 .mw-card-desc{ margin-top: 5px; }
 
-.mw-card-sart, .mw-card-sart-percent{ background: url(http://static.cosmeapp.com/fis/src/star_3f1030e.png) repeat-x 0 0; background-size: 12px 26px; height: 12px; display: inline-block; vertical-align: top; }
+.mw-card-sart, .mw-card-sart-percent{ background: url(http://img0.cosmeapp.com/fis/src/star_3f1030e.png) repeat-x 0 0; background-size: 12px 26px; height: 12px; display: inline-block; vertical-align: top; }
 .mw-card-sart{ background-position: 0 -13px; width: 60px;  }
 .mw-card-sart-percent{ background-position: 0 0; }
 .mw-card-arrow{ width: 10px; height: 10px; box-sizing: border-box; border-top: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7;-webkit-transform: rotate(45deg); transform: rotate(45deg); position: absolute; right: 10px; top: 50%; margin-top: -5px; }

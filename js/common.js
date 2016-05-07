@@ -89,6 +89,9 @@
             // url: F.getAjaxUri('/api/order/shopping-cart-list?#',
             url: '',
             beforeSend: function(xhr, settings){
+                if( typeof CONFIG === "undefined" ){
+                    CONFIG = {};
+                }
                 if( CONFIG && F.isEmptyObject(CONFIG['loginuser']) && cfg['type'] == 'POST' ){
                     F.showLogin();
                     return false
@@ -97,6 +100,9 @@
             success: function(data, status, xhr){
             },
             error: function(xhr, errorType, error){
+                if( errorType == 'abort'  ){
+                    return;
+                }
                 F.stat.log({
                     gid: 'error',
                     fid: 'error_ajax',
@@ -202,28 +208,16 @@
         }
     }
     function initScroll(){
-        // 后台处理前端样式逻辑总是忘记处理
-        var $scroll = $('.flindex-brand-scroll');
-        $scroll.each(function(){
-            var $this = $(this);
-            var len = $this.find('.flindex-brand-slider-item').length;
-            var width = 2.86667 * len + 'rem';
-            $this.css({
-                'width': width
-            })
-        });
-
         var $cmscroll = $('.cm-scroll');
         $cmscroll.each(function(){
             var $this = $(this);
             var len = $this.find('.cm-scroll-item').length;
-            var width = 3.6 * len + 'rem';
+            var width = 2.96 * len + 0.4 + 'rem';
             $this.css({
                 'width': width
             });
         });
     }
-
     $(document).ready(function(){
         slider();
         initScroll();
