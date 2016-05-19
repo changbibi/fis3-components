@@ -32,6 +32,14 @@ html, body {
     user-select: none;
 }
 
+/**
+ * http://www.cnblogs.com/jfw10973/p/4069851.html
+ * http://am-team.github.io/amg/dev-exp-doc.html
+ *
+ * safari 对某些元素绑定在body上失效
+ */
+body{ cursor: pointer; }
+
 
 /**
  * refer
