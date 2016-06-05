@@ -29,6 +29,7 @@ function pageResponse(opt) {
         sm = opt.mode || "auto",
         or = opt.origin || "left top 0",
         sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw;
+        callback = opt.callback || function(){};
 
     //样式模板 auto || contain || cover
     function template(mode, obj, num) {
@@ -58,6 +59,7 @@ function pageResponse(opt) {
                 }
             }
         }
+        callback(num);
     }
 
     //运行
