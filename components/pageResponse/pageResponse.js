@@ -1,4 +1,4 @@
-/* 
+/*
  * 名称 ：移动端响应式框架
  * 作者 ：白树 http://peunzhang.cnblogs.com
  * 版本 ：v2.1
@@ -12,6 +12,7 @@ function pageResponse(opt) {
 
         // 设备宽高初始比例
         dw = document.documentElement.clientWidth,
+        dw = dw > 540 ? 540 : dw,
         dh = document.documentElement.clientHeight,
         ds = dw / dh,
 
@@ -27,7 +28,8 @@ function pageResponse(opt) {
         // 核心代码：页面缩放比例
         sm = opt.mode || "auto",
         or = opt.origin || "left top 0",
-        sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw; 
+        sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw;
+        callback = opt.callback || function(){};
 
     //样式模板 auto || contain || cover
     function template(mode, obj, num) {
@@ -57,6 +59,7 @@ function pageResponse(opt) {
                 }
             }
         }
+        callback(num);
     }
 
     //运行
@@ -68,8 +71,8 @@ function pageResponse(opt) {
  *  window.onload = window.onresize = function(){
  *      pageResponse({
  *          selector : '输入类名', //模块的类名
- *          mode : 'contain',    // auto || contain || cover 
- *          width : '320',     //默认宽320px 
+ *          mode : 'contain',    // auto || contain || cover
+ *          width : '320',     //默认宽320px
  *          height : '504',     //默认高504px
  *          origin : 'center center 0'     //缩放中心点，可选，在contain和cover模式下无效，默认为"left top 0"
  *      })
