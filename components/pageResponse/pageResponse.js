@@ -55,7 +55,7 @@ function pageResponse(opt) {
                 document.body.style.msTouchAction = "none";
             } else {
                 document.ontouchmove = function(e) {
-                    e.preventDefault()
+                    //e.preventDefault()
                 }
             }
         }
