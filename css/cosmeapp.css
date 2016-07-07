@@ -1,0 +1,28 @@
+body{ background: #f0f0f0; font-size: 12px;margin: 0 auto; }
+
+/**
+ * chrome 插件产生的影响
+ */
+.ui-dialog{ margin: 0!important; background: rgba(0,0,0,.4)!important; }
+
+
+[class^="mwicon"] {
+  font-family:"mwfont" !important;
+  font-size:12px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: #bebebe;
+}
+
+
+.mw-container{ width: 10rem; }
+
+
+.mw-head{ padding: 10px 10px 15px; background-color: #fff; }
+.mw-head > h2{ color: #2d2d34; font-size: 14px; text-align: center; line-height: 35px; position: relative; }
+.mw-head > h2::after{ position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); content: ''; width: 16px; height: 0; line-height: 0; border-top: 1px solid #d7d7d7;  }
+
+/* 20px */
+.mw-mb{ margin-bottom: 0.266667rem; }

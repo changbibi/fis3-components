@@ -32,6 +32,14 @@ html, body {
     user-select: none;
 }
 
+/**
+ * http://www.cnblogs.com/jfw10973/p/4069851.html
+ * http://am-team.github.io/amg/dev-exp-doc.html
+ *
+ * safari 对某些元素绑定在body上失效
+ */
+body{ cursor: pointer; }
+
 
 /**
  * refer
@@ -194,7 +202,7 @@ sub {
 /* 正常链接 未访问 */
 /* 鼠标悬停 */
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 /* 默认不显示下划线，保持页面简洁 */
 ins,
@@ -489,10 +497,10 @@ body {
     zoom: 1;
     clear: both;
 }
-
-img[data-lazyload]{ background: url(http://static.cosmeapp.com/FvcMWnL0HDVDpD5_0_nb-gL4aQSQ?imageView2/2/w/750/h/750) center center repeat-y #e6e6e6; background-size: 100% auto; }
+/* e6e6e6 */
+img[data-lazyload]{ background: url(http://img0.cosmeapp.com/FvcMWnL0HDVDpD5_0_nb-gL4aQSQ) center center no-repeat transparent; background-size: 100% auto; }
 /* Mobile Application */
-.ma-weixin-mask{ position: fixed; top: 0; bottom: 0; width: 10rem; height: 100%; background: url(//static.cosmeapp.com/Fqysa1uAjXjHemwkDA-DmWf7mI0v?imageView2/2/w/750/h/500) no-repeat 0 0 rgba(0, 0, 0, 0.6); background-size: 100% auto;  z-index: 100;  }
+.ma-weixin-mask{ position: fixed; top: 0; bottom: 0; width: 10rem; height: 100%; background: url(//img0.cosmeapp.com/Fqysa1uAjXjHemwkDA-DmWf7mI0v?imageView2/2/w/750/h/500) no-repeat 0 0 rgba(0, 0, 0, 0.6); background-size: 100% auto;  z-index: 100;  }
 
 /**
  * placeholder

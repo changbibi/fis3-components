@@ -1,0 +1,12 @@
+.mslider{ position: relative;  background-color: #fff; }
+/**
+ * 750 * 250px
+ * @type {[type]}
+ */
+.mslider-wrap{ overflow: hidden; width: 10rem; height: 3.333333rem; }
+.mslider-item{ float: left; position: relative; width: 10rem; height: 3.333333rem; }
+.mslider-item img{ width: 100%; height: 100%; }
+.mslider-indicators{ display: none; width: 10rem; position: absolute; bottom: 5px; left: 0; text-align: center; font-size: 0; line-height: 0; }
+.mslider-indicators > div{ display: inline-block;  /* background-color: #b2b2b2; */ color: #fff; padding: 4px 4px; text-align: center; line-height: 0; border-radius: 7px; }
+.mslider-indicators span{ background-color: #dfe0e2; display: inline-block; border-radius: 50%; width: 6px; height: 6px; line-height: 0; margin: 0 5px; }
+.mslider-indicators .cur{ background-color: #ffffff; }
